@@ -44,12 +44,5 @@
         </TableRow>
     </TableLayout>
 
-    <Button
-        android:id="@+id/button_first"
-        android:layout_width="34dp"
-        android:layout_height="88dp"
-        android:text="@string/CreateTask"
-        android:textSize="25sp"
-        android:background="@color/black"
-        />
+
 </LinearLayout>
