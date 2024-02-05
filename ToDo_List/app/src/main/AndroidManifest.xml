@@ -23,6 +23,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SecondFragment"
+            android:label="@string/SecondFrag"
+            />
+        <activity
+            android:name=".TodoMain"
+            android:label="@string/TDLMain"
+            />
+        <activity
+            android:name=".CourseMain"
+            android:label="@string/Courses"
+            />
+        <activity
+            android:name=".ExamMain"
+            android:label="@string/Exam"
+            />
+
+
     </application>
 
 </manifest>

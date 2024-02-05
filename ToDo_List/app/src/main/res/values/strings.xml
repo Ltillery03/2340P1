@@ -5,9 +5,18 @@
     <string name="first_fragment_label">To-Do List</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
+    <string name="LandingMain">College Scheduler</string>
+    <string name="TDLMain">To-Do Items</string>
     <string name="previous">Previous</string>
-    <string name="CreateTask">+</string>
-
+    <string name="CreateTask">Create New</string>
+    <string name="Task">Task</string>
+    <string name="Time">Time</string>
+    <string name="Location">Location</string>
+    <string name="Class">Class</string>
+    <string name="Return">Return</string>
+    <string name="Exam">Exams</string>
+    <string name="SecondFrag">Second Fragment</string>
+    <string name="Courses">Courses</string>
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus

@@ -1,62 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <ListView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Listview"/>
+    android:padding="16dp">
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginEnd="31dp"
-        android:text="Task"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        android:text="@string/LandingMain"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/Todo"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="48dp"
-        android:text="Time"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Class"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Location"
-        android:textAlignment="textEnd"
-        android:textSize="25sp"
+        android:text="@string/TDLMain"
+        app:layout_constraintBottom_toTopOf="@id/Class"
+        app:layout_constraintTop_toBottomOf="parent"
+        tools:layout_editor_absoluteX="137dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        tools:layout_editor_absoluteY="16dp" />
+        android:onClick=""
+        />
 
+    <Button
+        android:id="@+id/Class"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Class"
+        app:layout_constraintBottom_toTopOf="@+id/Exam"
+        app:layout_constraintTop_toBottomOf="@id/Todo"
+        tools:layout_editor_absoluteX="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/Exam"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Exam"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Class"
+        tools:layout_editor_absoluteX="137dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
