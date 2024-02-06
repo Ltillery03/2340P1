@@ -16,9 +16,9 @@ import com.example.to_do_list.databinding.FragmentFirstBinding;
 public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
-    public void onClick(View v) { //why doesn't this line work when it does inside of the other methods'
-        startActivity(new Intent(FirstFragment.this, TodoMain.class));
-    }
+//    public void onClick(View v) { //why doesn't this line work when it does inside of the other methods'
+//        startActivity(new Intent(FirstFragment.this, TodoMain.class));
+//    }
     @Override
     public View onCreateView(
             LayoutInflater inflater, ViewGroup container,

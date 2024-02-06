@@ -39,6 +39,9 @@
             android:name=".ExamMain"
             android:label="@string/Exam"
             />
+        <activity
+            android:name=".CreateExamActivity"
+            />
 
 
     </application>
