@@ -39,16 +39,25 @@ public class MainActivity extends AppCompatActivity {
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
-            }
-        });
+//        binding.fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAnchorView(R.id.fab)
+//                        .setAction("Action", null).show();
+//            }
+//        });
     }
 
+    public void goExam(View v) { //why doesn't this line work when it does inside of the other methods'
+        startActivity(new Intent(MainActivity.this, ExamMain.class));
+    }
+    public void goTD(View v) { //why doesn't this line work when it does inside of the other methods'
+        startActivity(new Intent(MainActivity.this, TodoMain.class));
+    }
+    public void goCourse(View v) { //why doesn't this line work when it does inside of the other methods'
+        startActivity(new Intent(MainActivity.this, CourseMain.class));
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

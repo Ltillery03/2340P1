@@ -17,8 +17,14 @@ public class FirstFragment extends Fragment {
 
     private FragmentFirstBinding binding;
 
-    public void onClick(View v) { //why doesn't this line work when it does inside of the other methods'
-      //  startActivity(new Intent(FirstFragment.this, TodoMain.class));
+    public void goTD(View v) { //why doesn't this line work when it does inside of the other methods'
+        startActivity(new Intent(getActivity(), TodoMain.class));
+    }
+    public void goClass(View v) { //why doesn't this line work when it does inside of the other methods'
+        startActivity(new Intent(getActivity(), CourseMain.class));
+    }
+    public void goExam(View v) { //why doesn't this line work when it does inside of the other methods'
+        startActivity(new Intent(getActivity(), ExamMain.class));
     }
     @Override
     public View onCreateView(
