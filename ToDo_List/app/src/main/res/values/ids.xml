@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etNewItem" type="id" />
+    <item name="btnAddItem" type="id" />
+    <item name="lvItems" type="id" />
+</resources>

@@ -5,45 +5,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+<!--    where are list items displayed??-->
+
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-33dp"
+        tools:layout_editor_absoluteY="-48dp">
+
         <TableRow
-            android:layout_height="match_parent"
-            android:layout_width="match_parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
             <Button
                 android:id="@+id/ReturnMain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Return"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:textSize="15sp"
-                android:onClick="goBack"
                 android:layout_gravity="center"
-                />
+                android:onClick="goBack"
+                android:text="@string/Return"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/MainText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/TDLMain"
                 android:textSize="30sp"
                 app:layout_constraintStart_toEndOf="@+id/ReturnMain"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                />
-            <Button
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button xmlns:app="http://schemas.android.com/apk/res-auto"
                 android:id="@+id/AddNew"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="@string/CreateTask"
                 app:layout_constraintEnd_toEndOf="parent"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                app:layout_constraintStart_toEndOf="@id/MainText"
-                android:layout_marginStart="10dp"
-                />
+                app:layout_constraintStart_toEndOf="@id/MainText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/todoRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
         </TableRow>
     </TableLayout>
 
