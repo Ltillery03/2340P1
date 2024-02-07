@@ -18,6 +18,7 @@ public class TodoMain extends AppCompatActivity {
     private ArrayList<String> todoItems; // The list of todo items
     private TodoAdapter todoAdapter; // Adapter for the RecyclerView
     private RecyclerView todoRecyclerView;
+
     public void goBack(View v) {
         startActivity(new Intent(TodoMain.this, FirstFragment.class));
     }

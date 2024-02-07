@@ -10,8 +10,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/LandingMain"
-        android:textSize="30sp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -26,7 +24,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:onClick="onCreateView" />
-<!--        what is supposed to go here -->
+        android:onClick="goTD"
+        
 
 
     <Button
@@ -38,7 +37,8 @@
         app:layout_constraintTop_toBottomOf="@id/Todo"
         tools:layout_editor_absoluteX="137dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goCourse"/>
 
     <Button
         android:id="@+id/Exam"
@@ -50,6 +50,7 @@
         app:layout_constraintTop_toBottomOf="@id/Class"
         tools:layout_editor_absoluteX="137dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="goExam"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

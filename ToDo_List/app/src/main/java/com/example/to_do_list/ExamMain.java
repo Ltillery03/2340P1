@@ -8,6 +8,10 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ExamMain extends AppCompatActivity {
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.exam_main);
+    }
     public void goBack(View v) {
         startActivity(new Intent(ExamMain.this, FirstFragment.class));
     }
